@@ -4,10 +4,10 @@ menupage.classList.add("menupage");
 function generateFoodLabel(imagelink, foodname, price){
     const foodinfo = document.createElement("div");
     foodinfo.classList.add("foodinfo");
-    foodinfo.textContent=foodname;
 
     const contenttitle = document.createElement("div");
     contenttitle.classList.add("contenttitle");
+    contenttitle.textContent=foodname;
 
     const images = document.createElement("img");
     images.src = `${imagelink}`;

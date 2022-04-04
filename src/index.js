@@ -1,5 +1,6 @@
 import spawn from "./home.js"
 import menus from "./menupage.js"
+import contacts from "./contact.js"
 
 const content = document.querySelector("#content");
 
@@ -27,6 +28,7 @@ function generateHeader(){
     const contactbutton = document.createElement("div");
     contactbutton.classList.add("contact");
     contactbutton.textContent = "Contact";
+    contactbutton.addEventListener("click", changepage);
 
     options.appendChild(homebutton);
     options.appendChild(menubutton);
@@ -70,14 +72,16 @@ function changepage(e){
         contactbutton.classList.remove("optionvisit");
 
     }else{
+        content.insertBefore(contacts, footer);
         this.classList.add("optionvisit");
         homebutton.classList.remove("optionvisit");
-        contactbutton.classList.remove("optionvisit");
+        menubutton.classList.remove("optionvisit");
     }
 }
 content.appendChild(header);
 content.appendChild(spawn);
 content.appendChild(footer);
+document.querySelector(".home").classList.add("optionvisit");
 
 
 console.log(spawn);
