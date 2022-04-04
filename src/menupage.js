@@ -50,6 +50,15 @@ function generateFoodLabel(imagelink, foodname, price){
 
     return foodinfo;
 }
-menupage.appendChild(generateFoodLabel("spooky/candy-corn-g754cd41f9_1280.jpg", "Candy Corn", "5.99"));
+menupage.appendChild(generateFoodLabel(
+    "spooky/candy-corn-g754cd41f9_1280.jpg", 
+    "Spooky Corn", 
+    "5.99"
+));
+menupage.appendChild(generateFoodLabel(
+    "spooky/candy-ga5529a6e2_1280.jpg",
+    "Spooky Gummy",
+    "8.99"
+));
 
 export default menupage;
