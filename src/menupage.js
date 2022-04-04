@@ -65,19 +65,26 @@ menupage.appendChild(generateFoodLabel(
     "Spooky Cakey",
     "20.99"
 ));
-menupage.append(generateFoodLabel(
+menupage.appendChild(generateFoodLabel(
     "spooky/baked-g9cf62bbe9_1280.jpg",
     "Spooky Cboco",
-    "$11.99"
+    "11.99"
 ));
-menupage.append(generateFoodLabel(
+menupage.appendChild(generateFoodLabel(
     "spooky/cake-pop-g450dcec90_1280.jpg",
     "Spooky Lolipop",
     "14.99"
 ));
-menupage.append(generateFoodLabel(
+menupage.appendChild(generateFoodLabel(
     "spooky/cookies-g6e9f48c9b_1280.jpg",
     "Spooky Cookie",
     "7.99"
 ));
+menupage.appendChild(generateFoodLabel(
+    "spooky/sweet-gb1ed78e49_1280.jpg",
+    "Spooky Cupcake",
+    "15.99"
+));
+
+
 export default menupage;
