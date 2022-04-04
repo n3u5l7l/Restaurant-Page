@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    --whites: white;
+}
+body{
+    min-height: 100vh; min-width: 100vw;
+    width: 1px; height: 1px;
+    background-color: black;
+    margin:0; padding:0;
+}
+#content{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    color: var(--whites, white);
+}
+.header{
+    display:flex;
+    flex-direction: column;
+    height:180px;
+    justify-content: space-between;
+    flex-shrink:0;
+}
+.title{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex:1;
+    border-bottom: 1px solid;
+    font-size: 35px;
+}
+.title::before, .title::after{
+    position: absolute;
+    content: "O";
+    color: red;
+    border-radius: 50%;
+    background-color: red;
+    height: 50px;
+}
+.title::before{
+    left: calc(50% - 300px);
+}
+.title::after{
+    left: calc(50% + 300px);
+}
+
+.options{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:50px;
+    font-size:20px;
+    border-bottom: 1px solid;
+}
+.home, .menu, .contact{
+    color:white;
+    transition: color 0.3s linear;
+    -webkit-transition: color 0.3s linear ;
+    cursor: pointer;
+}
+.optionvisit{
+    color:red;
+}
+.home:hover, .menu:hover, .contact:hover{
+    color:red;
+}
+.homepage, .menupage{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -18px;
+    flex:1;
+    border-bottom:1px solid white;
+}
+.about, .foodinfo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    padding:10px;
+}
+.foodinfo{
+    border-bottom: 1px solid red;
+}
+.abouttitle, .contenttitle{
+    font-size:25px;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.aboutcontent, .contentsection{
+    width: max(305px, 50%);
+}
+
+.footer{
+    display:flex;
+    justify-content: center;
+}
+
+/* menupage */
+img{
+    width:300px;
+    height:auto;
+}
+
+.contentsection{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+strong{
+    color:red;
+    font-size:20px;
+}
+.contentabout{
+    font-size:20px;
+    font-weight: bold;
+}
+.svg{
+    width:30px;
+    height:30px;
+    cursor:pointer;
+}
+.cost{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight: bolder;
+}
+.foodinfo:last-child{
+    border: none;
+}
+
+/* contact page */
+.contactpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:1;
+}
+
+.contactinfo, .addressinfo{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
