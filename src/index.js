@@ -17,10 +17,12 @@ function generateHeader(){
     const homebutton = document.createElement("div");
     homebutton.classList.add("home");
     homebutton.textContent = "Home";
+    homebutton.addEventListener("click", changepage);
 
     const menubutton = document.createElement("div");
     menubutton.classList.add("menu");
     menubutton.textContent = "Menu";
+    menubutton.addEventListener("click", changepage);
 
     const contactbutton = document.createElement("div");
     contactbutton.classList.add("contact");
@@ -44,9 +46,25 @@ function generateFooter(){
     return footer;
 }
 
-content.appendChild(generateHeader());
-content.appendChild(menus);
-content.appendChild(generateFooter());
+const header = generateHeader();
+const footer = generateFooter();
+
+function changepage(e){
+    content.textContent = "";
+    content.appendChild(header);
+    content.appendChild(footer);
+    
+    if(this.textContent==="Home"){
+        content.insertBefore(spawn, footer);
+    }else if (this.textContent==="Menu"){
+        content.insertBefore(menus, footer);
+    }else{
+        
+    }
+}
+content.appendChild(header);
+content.appendChild(spawn);
+content.appendChild(footer);
 
 
 console.log(spawn);
