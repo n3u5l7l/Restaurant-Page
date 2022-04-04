@@ -60,5 +60,9 @@ menupage.appendChild(generateFoodLabel(
     "Spooky Gummy",
     "8.99"
 ));
-
+menupage.appendChild(generateFoodLabel(
+    "spooky/art-soap-g4181a1bab_1280.jpg",
+    "Spooky Cakey",
+    "20.99"
+));
 export default menupage;
