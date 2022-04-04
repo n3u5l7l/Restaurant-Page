@@ -70,5 +70,10 @@ menupage.append(generateFoodLabel(
     "Spooky Cboco",
     "$11.99"
 ));
+menupage.append(generateFoodLabel(
+    "spooky/cake-pop-g450dcec90_1280.jpg",
+    "Spooky Lolipop",
+    "14.99"
+));
 
 export default menupage;
