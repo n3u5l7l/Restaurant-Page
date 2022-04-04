@@ -75,5 +75,9 @@ menupage.append(generateFoodLabel(
     "Spooky Lolipop",
     "14.99"
 ));
-
+menupage.append(generateFoodLabel(
+    "spooky/cookies-g6e9f48c9b_1280.jpg",
+    "Spooky Cookie",
+    "7.99"
+));
 export default menupage;
