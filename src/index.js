@@ -1,4 +1,5 @@
 import spawn from "./home.js"
+import menus from "./menupage.js"
 
 const content = document.querySelector("#content");
 
@@ -44,7 +45,7 @@ function generateFooter(){
 }
 
 content.appendChild(generateHeader());
-content.appendChild(spawn);
+content.appendChild(menus);
 content.appendChild(generateFooter());
 
 
