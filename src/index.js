@@ -54,12 +54,25 @@ function changepage(e){
     content.appendChild(header);
     content.appendChild(footer);
     
+    const homebutton = document.querySelector(".home");
+    const menubutton = document.querySelector(".menu");
+    const contactbutton = document.querySelector(".contact");
+
     if(this.textContent==="Home"){
         content.insertBefore(spawn, footer);
+        this.classList.add("optionvisit");
+        menubutton.classList.remove("optionvisit");
+        contactbutton.classList.remove("optionvisit");
     }else if (this.textContent==="Menu"){
         content.insertBefore(menus, footer);
+        this.classList.add("optionvisit");
+        homebutton.classList.remove("optionvisit");
+        contactbutton.classList.remove("optionvisit");
+
     }else{
-        
+        this.classList.add("optionvisit");
+        homebutton.classList.remove("optionvisit");
+        contactbutton.classList.remove("optionvisit");
     }
 }
 content.appendChild(header);
